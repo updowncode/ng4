@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HeroComponent } from '../hero/hero.component';
 import { HeroDetail } from '../hero-detail'
-const HEROES: HeroDetail[] = [ 
+const HEROES: HeroDetail[] = [
   { id: 11, name: 'Mr. Nice' },
   { id: 12, name: 'Narco' },
   { id: 13, name: 'Bombasto' },
@@ -24,6 +24,7 @@ export class HeroListComponent implements OnInit {
 
   ngOnInit() {
     if (this.heros.length > 0) {
+      this.heros[0].id = 13;
       this.heros[0].name = 'test';
     }
   }
