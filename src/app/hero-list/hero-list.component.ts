@@ -25,6 +25,7 @@ export class HeroListComponent implements OnInit {
   ngOnInit() {
     if (this.heros.length > 0) {
       this.heros[0].id = 13;
+      this.heros[0].id = 14;
       this.heros[0].name = 'test';
     }
   }
